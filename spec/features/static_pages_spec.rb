@@ -9,7 +9,11 @@ describe "StaticPages" do
     it "should have the right title 'Home'" do
       visit "/static_pages/home"
       puts page.body
-      page.should have_title("Ruby on Rails Tutorial Sample App | Home" )
+      page.should have_title("Ruby on Rails Tutorial Sample App" )
+    end
+    it "should not have a custom page title" do
+      visit '/static_pages/home'
+      expect(page).not_to have_title('| Home')
     end
   end
 
