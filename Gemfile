@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.1.0'
 
 gem 'rails_12factor'
+gem 'bootstrap-sass', '2.3.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
